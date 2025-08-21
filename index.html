@@ -1,184 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JSIS-IT Microcapsule</title>
-  <style>
-    :root {
-      --primary: #E63946;
-      --dark: #1D1D1D;
-      --light: #ffffff;
-      --gray: #f8f9fa;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSIS Microcapsule 21 Research</title>
+    <style>
+        /* Modern, clean design with a professional look */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
 
-    body {
-      margin: 0;
-      font-family: "Segoe UI", sans-serif;
-      background: var(--gray);
-      color: var(--dark);
-    }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
 
-    header {
-      text-align: center;
-      padding: 2rem;
-      background: var(--primary);
-      color: var(--light);
-    }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
 
-    h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
+        nav {
+            background-color: #34495e;
+            padding: 1rem;
+            text-align: center;
+        }
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-      padding: 2rem;
-      max-width: 1200px;
-      margin: auto;
-    }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
 
-    .card {
-      background: var(--light);
-      border-radius: 12px;
-      padding: 1.5rem;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
-      cursor: pointer;
-    }
+        nav a:hover {
+            color: #18bc9c;
+        }
 
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    }
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
 
-    .card h2 {
-      margin-top: 0;
-      color: var(--primary);
-      font-size: 1.3rem;
-    }
+        section {
+            background-color: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
 
-    .links {
-      list-style: none;
-      padding: 0;
-      margin: 1rem 0 0;
-    }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #18bc9c;
+            padding-bottom: 0.5rem;
+        }
 
-    .links li {
-      margin: 0.5rem 0;
-    }
+        ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+        }
 
-    .links a {
-      text-decoration: none;
-      color: var(--dark);
-      font-weight: 500;
-      padding: 0.4rem 0.8rem;
-      border-radius: 6px;
-      display: inline-block;
-      transition: background 0.3s, color 0.3s;
-    }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
 
-    .links a:hover {
-      background: var(--primary);
-      color: var(--light);
-    }
-
-    /* Hidden subtopics */
-    .subtopics {
-      display: none;
-      margin-top: 1rem;
-      padding: 1rem;
-      border-top: 2px solid var(--primary);
-    }
-
-    .subtopics h3 {
-      margin-top: 0;
-      color: var(--primary);
-    }
-
-    .subtopics ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .subtopics li {
-      margin: 0.5rem 0;
-    }
-
-    .subtopics a {
-      text-decoration: none;
-      color: var(--dark);
-      font-weight: 500;
-    }
-
-    .subtopics a:hover {
-      color: var(--primary);
-    }
-  </style>
+        /* Responsive design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            nav a {
+                display: block;
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>JSIS-IT Microcapsule</h1>
-    <p>Select your subject and class</p>
-  </header>
+    <header>
+        <h1>JSIS Microcapsule 21</h1>
+        <p>Advancing Microencapsulation Technology for Innovative Applications</p>
+    </header>
 
-  <section class="grid">
-    <!-- All Courses -->
-    <div class="card">
-      <h2>All Courses</h2>
-      <ul class="links">
-        <li><a href="#">Complete Microcapsule</a></li>
-      </ul>
-    </div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-    <!-- Physics -->
-    <div class="card" id="physicsCard">
-      <h2>Physics</h2>
-      <ul class="links">
-        <li><a href="#" id="phy11">Class 11 Physics</a></li>
-        <li><a href="#">Class 12 Physics</a></li>
-      </ul>
-      <!-- Subtopics hidden initially -->
-      <div class="subtopics" id="phy11Topics">
-        <h3>Class 11 Physics</h3>
-        <ul>
-          <li><a href="#">Mechanics</a></li>
-          <li><a href="#">Thermodynamics</a></li>
-          <li><a href="#">Fluids</a></li>
-          <li><a href="#">Waves</a></li>
-        </ul>
-      </div>
-    </div>
+    <main>
+        <section id="home">
+            <h2>Welcome</h2>
+            <p>This website presents our latest research on JSIS Microcapsule 21, focusing on efficient microencapsulation techniques for various industries including food, pharmaceuticals, and materials science.</p>
+        </section>
 
-    <!-- Chemistry -->
-    <div class="card">
-      <h2>Chemistry</h2>
-      <ul class="links">
-        <li><a href="#">Class 11 Chemistry</a></li>
-        <li><a href="#">Class 12 Chemistry</a></li>
-      </ul>
-    </div>
+        <section id="about">
+            <h2>About the Project</h2>
+            <p>JSIS Microcapsule 21 is a cutting-edge research initiative aimed at developing advanced microcapsules for controlled release applications. Our team combines expertise in chemistry, materials engineering, and biotechnology.</p>
+        </section>
 
-    <!-- Mathematics -->
-    <div class="card">
-      <h2>Mathematics</h2>
-      <ul class="links">
-        <li><a href="#">Class 11 Maths</a></li>
-        <li><a href="#">Class 12 Maths</a></li>
-      </ul>
-    </div>
-  </section>
+        <section id="research">
+            <h2>Key Research Findings</h2>
+            <ul>
+                <li>Improved encapsulation efficiency up to 95%</li>
+                <li>Enhanced stability in extreme conditions</li>
+                <li>Applications in targeted drug delivery</li>
+                <li>Sustainable production methods using bio-based materials</li>
+            </ul>
+        </section>
 
-  <script>
-    // Toggle subtopics when clicking Class 11 Physics
-    document.getElementById("phy11").addEventListener("click", function(e) {
-      e.preventDefault();
-      const topics = document.getElementById("phy11Topics");
-      topics.style.display = topics.style.display === "block" ? "none" : "block";
-    });
-  </script>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>For collaborations or more information, reach out at research@jsis-microcapsule.com</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 JSIS Microcapsule Research Team. All rights reserved.</p>
+    </footer>
 </body>
 </html>
-
