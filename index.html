@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JSIS-IT Microcapsule – Course Selector</title>
+
+  <!-- Mobile & SEO -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="JSIS-IT Microcapsule: concise, class-wise resources for Physics, Chemistry, and Mathematics.">
+  <meta name="keywords" content="JEE, Microcapsule, Physics, Chemistry, Mathematics, Class 11, Class 12">
+
+  <!-- Favicon (replace /favicon.png with your own 32×32 PNG) -->
+  <link rel="icon" type="image/png" href="/favicon.png">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* ─── Base ───────────────────────────────────────────── */
+    *,*::before,*::after{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:"Segoe UI",sans-serif;
+      background:#f8f9fb;
+      color:#333;
+      line-height:1.55;
+    }
+
+    /* ─── Header ─────────────────────────────────────────── */
+    header{
+      text-align:center;
+      padding:2rem 1rem;
+      background:linear-gradient(135deg,#004e92,#000428);
+      color:#fff;
+    }
+    header h1{margin:.2rem 0;font-size:2.3rem;font-weight:600}
+    header p{margin:.3rem 0 0;font-size:1rem;opacity:.9}
+
+    /* ─── Grid Layout ────────────────────────────────────── */
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+      gap:1.5rem;
+      padding:2rem 1rem 3rem;
+      max-width:1200px;
+      margin:auto;
+    }
+
+    /* ─── Cards ──────────────────────────────────────────── */
+    .card{
+      background:#fff;
+      border-radius:12px;
+      padding:1.6rem;
+      box-shadow:0 4px 12px rgba(0,0,0,.08);
+      transition:transform .25s ease,box-shadow .25s ease;
+    }
+    .card:hover{
+      transform:translateY(-6px);
+      box-shadow:0 8px 20px rgba(0,0,0,.15);
+    }
+    .card h2{
+      margin:.2rem 0 1rem;
+      font-size:1.35rem;
+      color:#004e92;
+    }
+
+    /* ─── Links ──────────────────────────────────────────── */
+    .links{list-style:none;padding:0;margin:0}
+    .links li{margin:.55rem 0}
+    .links a{
+      text-decoration:none;
+      color:#333;
+      font-weight:500;
+      padding:.45rem .9rem;
+      border-radius:6px;
+      display:inline-block;
+      transition:background .3s,color .3s;
+    }
+    .links a:hover{
+      background:#004e92;
+      color:#fff;
+    }
+
+    /* ─── Footer ─────────────────────────────────────────── */
+    footer{
+      text-align:center;
+      padding:1.5rem 1rem 2rem;
+      font-size:.9rem;
+      color:#666;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ░░ Header ░░ -->
+  <header>
+    <h1>JSIS-IT Microcapsule</h1>
+    <p>Select your subject & class</p>
+  </header>
+
+  <!-- ░░ Main Grid ░░ -->
+  <main class="grid">
+
+    <!-- All Courses -->
+    <article class="card">
+      <h2>All Courses</h2>
+      <ul class="links">
+        <li><a href="/courses/microcapsule.html">Complete Microcapsule</a></li>
+      </ul>
+    </article>
+
+    <!-- Physics -->
+    <article class="card">
+      <h2>Physics</h2>
+      <ul class="links">
+        <li><a href="/physics/class11.html">Class 11 Physics</a></li>
+        <li><a href="/physics/class12.html">Class 12 Physics</a></li>
+      </ul>
+    </article>
+
+    <!-- Chemistry -->
+    <article class="card">
+      <h2>Chemistry</h2>
+      <ul class="links">
+        <li><a href="/chemistry/class11.html">Class 11 Chemistry</a></li>
+        <li><a href="/chemistry/class12.html">Class 12 Chemistry</a></li>
+      </ul>
+    </article>
+
+    <!-- Mathematics -->
+    <article class="card">
+      <h2>Mathematics</h2>
+      <ul class="links">
+        <li><a href="/maths/class11.html">Class 11 Maths</a></li>
+        <li><a href="/maths/class12.html">Class 12 Maths</a></li>
+      </ul>
+    </article>
+
+  </main>
+
+  <!-- ░░ Footer ░░ -->
+  <footer>&copy; 2025 JSIS-IT. All rights reserved.</footer>
+
+</body>
+</html>
